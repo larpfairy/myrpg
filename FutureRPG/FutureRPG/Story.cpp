@@ -12,8 +12,8 @@ void Story::sequence1(string name, string playerclass)
 	cout << "Reconstructing physical framework..." << endl;
 	cout << "Welcome back " << name << ". Due to hazardous circumstances you have been taken out of stasis." << endl;
 	cout << "You drag your limp body off of the stasic table and are now standing within an empty 10x10 foot room." << endl;
-	cout << "Your belongings are stuffed into a chest in the corner" << endl;
-	cout << "There is a door leading to a hallway to the North" << endl;
+	cout << "Your belongings are stuffed into a CHEST in the corner." << endl;
+	cout << "There is a DOOR leading to a hallway to the North." << endl;
 	int i = 0;
 	while (i !=1)
 	{
