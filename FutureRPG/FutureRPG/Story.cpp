@@ -15,23 +15,22 @@ void Story::sequence1(string name, string playerclass)
 	cout << "Your belongings are stuffed into a chest in the corner" << endl;
 	cout << "There is a door leading to a hallway to the North" << endl;
 	int i = 0;
-	while (i = 0)
+	while (i !=1)
 	{
 		cout << "What would you like to do?" << endl;
 		cin >> input;
-		if (input == "chest" || "Chest")
+		if ((input == "chest") || (input == "Chest"))
 		{
 			i++;
 		}
-		else if (input == "door" || "Door")
+		else if ((input == "door") || (input == "Door"))
 		{
 			i++;
 		}
 		else
 		{
-			cout << "I dont understand you." << endl;
+			cout << "I don't understand you. ";
 		}
-		return;
 	}
 
 

@@ -23,7 +23,6 @@ int main()
 	AttributesObject.SetModifiers(&STR, &DEX, &INT, &CON, &SMOD, &DMOD, &IMOD, &CMOD);
 	cout << "Class: " << playerclass << endl;
 	Story StoryObject;
-	cout << string(50, '\n');
 	StoryObject.sequence1(name, playerclass);
 	cin.get();
 	cin.get();
