@@ -44,6 +44,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\michael\Documents\GitHub\myrpg\FutureRPG\FutureStaticLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -67,12 +68,15 @@
     <ClCompile Include="Attributes.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Source.cpp" />
-    <ClCompile Include="Story.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Attributes.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="Story.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FutureStaticLib\FutureStaticLib.vcxproj">
+      <Project>{9355c799-11d3-4da3-a874-28306218e0ab}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
