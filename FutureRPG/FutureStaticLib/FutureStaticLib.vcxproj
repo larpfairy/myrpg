@@ -76,9 +76,11 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Armors.h" />
     <ClInclude Include="Story1.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Armors.cpp" />
     <ClCompile Include="Story1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
