@@ -76,7 +76,7 @@ namespace AllContainers
 				}
 				else if (chestnumber == 1)
 				{
-					armorObject.BrawlerClothes(&ARMOR, INT);
+					armorObject.ScientistClothes(&ARMOR, INT);
 					chest[1] = " ";
 				}
 				else if (chestnumber == 2)

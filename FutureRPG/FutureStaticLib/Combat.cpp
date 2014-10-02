@@ -28,14 +28,16 @@ namespace AllCombat
 		cout << "It appears to be a " << enemyName << ". Fuck!" << endl;
 		cout << string(50, '\n');
 		cout << "You go first, What would you like to do?" << endl;
+		system("pause");
 		string combatOptions[2] = { "0. Attack", "1. Defend" };
 		string enemyInfo[2] = { "Enemy Name: ", "Health: " };
-		cout << enemyInfo[0];
-		cout << " " << enemyName << endl;
-		cout << enemyInfo[1];
-		cout << " " << enemyHealth << endl;
 		while (*HEALTH > 0 && enemyHealth > 0)
 		{
+			cout << string(50, '\n');
+			cout << enemyInfo[0];
+			cout << " " << enemyName << endl;
+			cout << enemyInfo[1];
+			cout << " " << enemyHealth << endl;
 			for (int i = 0; i < 2; i++)
 			{
 				cout << combatOptions[i] << endl;
@@ -52,18 +54,22 @@ namespace AllCombat
 					int damage = rand() % *WEAPON;
 					enemyHealth = enemyHealth - damage;
 					cout << "You deal " << damage << "!!!" << endl;
+					system("pause");
 				}
 				else
 				{
 					cout << "Your attack missed :/" << endl;
+					system("pause");
 				}
 			}
 			if (combatChoice == 1)
 			{
 				cout << "You take a moment to increase your defenses." << endl;
+				system("pause");
 			}
 			if (enemyHealth > 0)
 			{
+				cout << string(50, '\n');
 				cout << "The enemy is attacking!" << endl;
 				cout << enemyName << " is using " << enemyWeapon << "!" << endl;
 				int roll = rand() % 20 + 1 + enemyBaseDamage;
@@ -72,10 +78,12 @@ namespace AllCombat
 					cout << "The attack hits!" << endl;
 					*HEALTH = *HEALTH - enemyBaseDamage;
 					cout << "You take " << enemyBaseDamage << " damage" << endl;
+					system("pause");
 				}
 				else
 				{
 					cout << "The enemy missed!" << endl;
+					system("pause");
 				}
 			}
 
@@ -98,25 +106,27 @@ namespace AllCombat
 
 	string Combat::GetEnemyName(int *LEVEL)
 	{
-		srand(time(0));
 		int enemyNumber;
-		enemyNumber = rand() % 3 + 1;
 		string enemyName;
 		if (*LEVEL = 1)
 		{
-			if (enemyNumber = 1)
+			srand(time(0));
+			enemyNumber = (rand() % 3) + 1;
+			if (enemyNumber == 1)
 			{
-				enemyName == "Raider";
+				enemyName = "Raider";
 				return "Raider";
 			}
-			else if (enemyNumber = 2)
+			else if (enemyNumber == 2)
 			{
-				enemyName == "Raider Commander";
+				enemyName = "Raider Commander";
 				return enemyName;
 			}
-			else if (enemyNumber = 3)
+			else if (enemyNumber == 3)
 			{
-				enemyName == "Space Rat";
+				srand(time(0));
+				enemyNumber = (rand() % 3) + 1;
+				enemyName = "Space Rat";
 				return enemyName;
 			}
 		}

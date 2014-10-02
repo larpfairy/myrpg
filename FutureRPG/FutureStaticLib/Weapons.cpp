@@ -22,7 +22,7 @@ namespace AllWeapons
 	}
 	void Weapon::SniperWeapon(int **WEAPON, int DEX)
 	{
-		cout << "You grab your trusty sniper rifle." << endl;
+		cout << "You grab your trusty Slingshot." << endl;
 		**WEAPON = 10 + DEX / 2;
 		cout << "Your base attack is " << **WEAPON << " ." << endl;
 		system("pause");
