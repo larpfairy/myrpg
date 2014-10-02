@@ -2,9 +2,12 @@
 #include "Story1.h"
 #include <string>
 #include "Armors.h"
+#include "Containers.h"
+#include <string>
 
 using namespace std;
 using namespace AllArmors;
+using namespace AllContainers;
 
 namespace FutureStory
 {
@@ -24,30 +27,22 @@ namespace FutureStory
 			cin >> input;
 			if ((input == "chest") || (input == "Chest"))
 			{
-				if (playerclass == "Brawler")
-				{
-					Armor ArmorObject;
-					ArmorObject.BrawlerClothes(&armor, STR);
-				}
-				else if (playerclass == "Scientist")
-				{
-					Armor ArmorObject;
-					ArmorObject.ScientistClothes(&armor, INT);
-				}
-				else if (playerclass == "Sniper")
-				{
-					Armor ArmorObject;
-					ArmorObject.SniperClothes(&armor, DEX);
-				}
-				i++;
+				cout << string(50, '\n');
+				Container containerObject;
+				containerObject.startingchest(playerclass, armor, weapon, INT, DEX, STR);
+				cout << "There is a DOOR leading to a hallway to the North." << endl;
 			}
 			else if ((input == "door") || (input == "Door"))
 			{
+				cout << string(50, '\n');
 				i++;
 			}
 			else
 			{
+				cout << string(50, '\n');
 				cout << "I don't understand you. ";
+				cout << "Your belongings are stuffed into a CHEST in the corner." << endl;
+				cout << "There is a DOOR leading to a hallway to the North." << endl;
 			}
 		}
 	}

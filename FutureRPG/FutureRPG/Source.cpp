@@ -25,9 +25,11 @@ using namespace FutureStory;
 		AttributesObject.SetAttributes(&STR, &DEX, &INT, &CON, playerclass);
 		AttributesObject.SetModifiers(&STR, &DEX, &INT, &CON, &SMOD, &DMOD, &IMOD, &CMOD);
 		cout << "Class: " << playerclass << endl << endl;
+		system("pause");
+		cout << string(50, '\n');
 		Story1 StoryObject;
 		StoryObject.Sequence1(name, playerclass, &armor, &weapon, INT, DEX, STR);
-		cout << armor << endl;
+		cout << armor << " " << weapon << endl;
 		cin.get();
 		cin.get();
 

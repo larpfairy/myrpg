@@ -77,11 +77,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Armors.h" />
+    <ClInclude Include="Containers.h" />
     <ClInclude Include="Story1.h" />
+    <ClInclude Include="Weapons.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Armors.cpp" />
+    <ClCompile Include="Containers.cpp" />
     <ClCompile Include="Story1.cpp" />
+    <ClCompile Include="Weapons.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

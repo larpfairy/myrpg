@@ -24,12 +24,24 @@
     <ClInclude Include="Armors.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Containers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Story1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Armors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Containers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapons.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
