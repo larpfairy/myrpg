@@ -77,12 +77,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Armors.h" />
+    <ClInclude Include="Combat.h" />
     <ClInclude Include="Containers.h" />
     <ClInclude Include="Story1.h" />
     <ClInclude Include="Weapons.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Armors.cpp" />
+    <ClCompile Include="Combat.cpp" />
     <ClCompile Include="Containers.cpp" />
     <ClCompile Include="Story1.cpp" />
     <ClCompile Include="Weapons.cpp" />

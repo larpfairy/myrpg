@@ -10,14 +10,14 @@ using namespace AllArmors;
 
 namespace AllContainers
 {
-	void Container::startingchest(string playerclass, int *armor, int *weapon, int INT, int DEX, int STR)
+	void Container::startingchest(string PLAYERCLASS, int *ARMOR, int *WEAPON, int INT, int DEX, int STR)
 	{
 		cout << "You open the chest and find some of your belonings." << endl;
 		cout << "Press the corresponding number to take an item." << endl;
 		cout << "Enter 2 to leave chest." << endl;
-		if (playerclass == "Brawler")
+		if (PLAYERCLASS == "Brawler")
 		{
-			string chest[3] = { "0. Brass Knuckles", "1. Kaki's", "2. Exit" };
+			string chest[3] = { "0. Brass Knuckles", "1. Fighter Regalia", "2. Exit" };
 			int chestnumber;
 			Weapon weaponObject;
 			Armor armorObject;
@@ -26,22 +26,22 @@ namespace AllContainers
 			{
 				cout << string(50, '\n');
 				cout << "Please enter the number of an item that you want to take." << endl;
-				for (int i = 0; i < 3; i++)
+				for (int x = 0; x < 3; x++)
 				{
-					cout << chest[i] << endl;
+					cout << chest[x] << endl;
 				}
 				cin >> chestnumber;
-				if (chestnumber = 0)
+				if (chestnumber == 0)
 				{
-					weaponObject.BrawlerWeapon(&weapon, STR);
+					weaponObject.BrawlerWeapon(&WEAPON, STR);
 					chest[0] = "";
 				}
-				else if (chestnumber = 1)
+				else if (chestnumber == 1)
 				{
-					armorObject.BrawlerClothes(&armor, STR);
+					armorObject.BrawlerClothes(&ARMOR, STR);
 					chest[1] = "";
 				}
-				else if (chestnumber = 2)
+				else if (chestnumber == 2)
 				{
 					i++;
 					cout << string(50, '\n');
@@ -53,7 +53,7 @@ namespace AllContainers
 			}
 		}
 
-		else if (playerclass == "Scientist")
+		else if (PLAYERCLASS == "Scientist")
 		{
 			string chest[3] = { "0. Telekinesis Gloves", "1. Lab Coat", "2. Exit" };
 			int chestnumber;
@@ -64,19 +64,19 @@ namespace AllContainers
 			{
 				cout << string(50, '\n');
 				cout << "Please enter the number of an item that you want to take." << endl;
-				for (int i = 0; i < 3; i++)
+				for (int x = 0; x < 3; x++)
 				{
-					cout << chest[i] << endl;
+					cout << chest[x] << endl;
 				}
 				cin >> chestnumber;
 				if (chestnumber == 0)
 				{
-					weaponObject.ScientistWeapon(&weapon, INT);
+					weaponObject.ScientistWeapon(&WEAPON, INT);
 					chest[0] = " ";
 				}
 				else if (chestnumber == 1)
 				{
-					armorObject.BrawlerClothes(&armor, INT);
+					armorObject.BrawlerClothes(&ARMOR, INT);
 					chest[1] = " ";
 				}
 				else if (chestnumber == 2)
@@ -90,10 +90,10 @@ namespace AllContainers
 				}
 			}
 		}
-		else if (playerclass == "Sniper")
+		else if (PLAYERCLASS == "Sniper")
 		{
 			cout << string(50, '\n');
-			string chest[3] = { "0. Sniper Rifle", "1. Sniper Gear", "2. Exit" };
+			string chest[3] = { "0. Slingshot", "1. Sniper Gear", "2. Exit" };
 			int chestnumber;
 			Weapon weaponObject;
 			Armor armorObject;
@@ -101,19 +101,19 @@ namespace AllContainers
 			while (i == 0)
 			{
 				cout << "Please enter the number of an item that you want to take." << endl;
-				for (int i = 0; i < 3; i++)
+				for (int x = 0; x < 3; x++)
 				{
-					cout << chest[i] << endl;
+					cout << chest[x] << endl;
 				}
 				cin >> chestnumber;
 				if (chestnumber == 0)
 				{
-					weaponObject.SniperWeapon(&weapon, DEX);
+					weaponObject.SniperWeapon(&WEAPON, DEX);
 					chest[0] = "";
 				}
 				else if (chestnumber == 1)
 				{
-					armorObject.SniperClothes(&armor, DEX);
+					armorObject.SniperClothes(&ARMOR, DEX);
 					chest[1] = "";
 				}
 				else if (chestnumber == 2)

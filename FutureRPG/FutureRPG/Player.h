@@ -9,6 +9,7 @@ public:
 	string getname();
 	void setclass();
 	string getclass();
+	string getWeaponName(string PLAYERCLASS);
 private:
 	string name;
 	string playerclass;

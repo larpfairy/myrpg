@@ -28,3 +28,18 @@ string Player::getclass()
 {
 	return playerclass;
 }
+string Player::getWeaponName(string PLAYERCLASS)
+{
+	if (PLAYERCLASS == "Scientist")
+	{
+		return "Telekinesis Gloves";
+	}
+	else if (PLAYERCLASS == "Brawler")
+	{
+		return "Brass Knuckles";
+	}
+	else
+	{
+		return "Slingshot";
+	}
+}

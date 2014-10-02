@@ -1,19 +1,20 @@
-﻿Build started 10/1/2014 9:29:28 PM.
+﻿Build started 10/2/2014 2:01:01 AM.
      1>Project "C:\Users\michael\Documents\GitHub\myrpg\FutureRPG\FutureStaticLib\FutureStaticLib.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Containers.cpp
-         Containers.cpp
-     1>c:\users\michael\documents\github\myrpg\futurerpg\futurestaticlib\containers.cpp(46): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
-                 c:\users\michael\documents\github\myrpg\futurerpg\futurestaticlib\containers.cpp(29) : definition of 'i' ignored
-                 c:\users\michael\documents\github\myrpg\futurerpg\futurestaticlib\containers.cpp(24) : definition of 'i' used
-     1>c:\users\michael\documents\github\myrpg\futurerpg\futurestaticlib\containers.cpp(84): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
-                 c:\users\michael\documents\github\myrpg\futurerpg\futurestaticlib\containers.cpp(67) : definition of 'i' ignored
-                 c:\users\michael\documents\github\myrpg\futurerpg\futurestaticlib\containers.cpp(62) : definition of 'i' used
-     1>c:\users\michael\documents\github\myrpg\futurerpg\futurestaticlib\containers.cpp(121): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
-                 c:\users\michael\documents\github\myrpg\futurerpg\futurestaticlib\containers.cpp(104) : definition of 'i' ignored
-                 c:\users\michael\documents\github\myrpg\futurerpg\futurestaticlib\containers.cpp(100) : definition of 'i' used
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Combat.cpp
+         Combat.cpp
+     1>c:\users\michael\documents\github\myrpg\futurerpg\futurestaticlib\combat.cpp(24): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\michael\documents\github\myrpg\futurerpg\futurestaticlib\combat.cpp(101): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\michael\documents\github\myrpg\futurerpg\futurestaticlib\combat.cpp(129): warning C4715: 'AllCombat::Combat::GetEnemyName' : not all control paths return a value
+     1>c:\users\michael\documents\github\myrpg\futurerpg\futurestaticlib\combat.cpp(144): warning C4715: 'AllCombat::Combat::GetEnemyHealth' : not all control paths return a value
+     1>c:\users\michael\documents\github\myrpg\futurerpg\futurestaticlib\combat.cpp(174): warning C4715: 'AllCombat::Combat::GetEnemyBaseDamage' : not all control paths return a value
+     1>c:\users\michael\documents\github\myrpg\futurerpg\futurestaticlib\combat.cpp(159): warning C4715: 'AllCombat::Combat::GetEnemyWeapon' : not all control paths return a value
+     1>c:\users\michael\documents\github\myrpg\futurerpg\futurestaticlib\combat.cpp(189): warning C4715: 'AllCombat::Combat::GetEnemyArmor' : not all control paths return a value
+     1>c:\users\michael\documents\github\myrpg\futurerpg\futurestaticlib\combat.cpp(204): warning C4715: 'AllCombat::Combat::GetEnemyArmorClass' : not all control paths return a value
+     1>c:\users\michael\documents\github\myrpg\futurerpg\futurestaticlib\combat.cpp(219): warning C4715: 'AllCombat::Combat::GetEnemyExperience' : not all control paths return a value
        Lib:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\Users\michael\Documents\GitHub\myrpg\FutureRPG\Debug\FutureStaticLib.lib" /NOLOGO Debug\Armors.obj
+         Debug\Combat.obj
          Debug\Containers.obj
          Debug\Story1.obj
          Debug\Weapons.obj
@@ -22,4 +23,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.36
+Time Elapsed 00:00:00.35

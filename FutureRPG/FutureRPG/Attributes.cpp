@@ -4,7 +4,7 @@
 #include <ctime>
 using namespace std;
 
-void Attributes::SetAttributes(int *STR, int  *DEX, int  *INT, int  *CON, string playerclass)
+void Attributes::SetAttributes(int *STR, int  *DEX, int  *INT, int  *CON, string PLAYERCLASS)
 {
 	srand(time(0));
 	*STR = (rand() % 6 + 1) + (rand() % 6 + 1) + (rand() % 6 + 1);
@@ -24,15 +24,15 @@ void Attributes::SetAttributes(int *STR, int  *DEX, int  *INT, int  *CON, string
 	int strength = *STR;
 	int dexterity = *DEX;
 
-	if (playerclass == "Scientist")
+	if (PLAYERCLASS == "Scientist")
 	{
 		*INT = intelligence + 4;
 	}
-	else if (playerclass == "Brawler")
+	else if (PLAYERCLASS == "Brawler")
 	{
 		*STR = strength + 4;
 	}
-	else if (playerclass == "Sniper")
+	else if (PLAYERCLASS == "Sniper")
 	{
 		*DEX = dexterity +4;
 	}
@@ -49,4 +49,21 @@ void Attributes::SetModifiers(int *STR, int *DEX, int *INT, int *CON, int *SMOD,
 	*DMOD = *DEX/2;
 	*IMOD = *INT/2;
 	*CMOD = *CON/2;
+}
+int Attributes::SetHealth(string PLAYERCLASS, int *CMOD)
+{
+	int Health;
+	if (PLAYERCLASS == "Scientist")
+	{
+		Health = 10 + *CMOD;
+	}
+	else if (PLAYERCLASS == "Brawler")
+	{
+		Health = 15 + *CMOD;
+	}
+	else
+	{
+		Health = 12 + *CMOD;
+	}
+	return Health;
 }

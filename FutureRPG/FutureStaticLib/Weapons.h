@@ -5,9 +5,9 @@ namespace AllWeapons
 	class Weapon
 	{
 	public:
-		void ScientistWeapon(int **weapon, int INT);
-		void BrawlerWeapon(int **weapon, int STR);
-		void SniperWeapon(int **weapon, int DEX);
+		void ScientistWeapon(int **WEAPON, int INT);
+		void BrawlerWeapon(int **WEAPON, int STR);
+		void SniperWeapon(int **WEAPON, int DEX);
 	private:
 		string scientistWeapon = "Alchemist Gloves";
 		string brawlerWeapon = "SwitchBlade";

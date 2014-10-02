@@ -6,7 +6,7 @@ namespace AllContainers
 	class Container
 	{
 	public:
-		void startingchest(string playerclass, int *armor, int *weapon, int INT, int DEX, int STR);
+		void startingchest(string PLAYERCLASS, int *ARMOR, int *WEAPON, int INT, int DEX, int STR);
 	private:
 	};
 }

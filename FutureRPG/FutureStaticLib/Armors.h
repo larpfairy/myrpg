@@ -5,9 +5,9 @@ namespace AllArmors
 	class Armor
 	{
 	public:
-		void ScientistClothes(int **armor, int INT);
-		void BrawlerClothes(int **armor, int STR);
-		void SniperClothes(int **armor, int DEX);
+		void ScientistClothes(int **ARMOR, int INT);
+		void BrawlerClothes(int **ARMOR, int STR);
+		void SniperClothes(int **ARMOR, int DEX);
 
 	private:
 		string scientistclothes = "Scientist Lab Coat";
