@@ -42,9 +42,12 @@ using namespace AllCombat;
 		WEAPONNAME = Playerobject.getWeaponName(PLAYERCLASS);
 		Combat combatObject;
 		bool combatResult = combatObject.Encounter(WEAPONNAME, &LEVEL, PLAYERCLASS, &ARMOR, &WEAPON, INT, DEX, STR, &HEALTH, &EXPERIENCE);
-		if (bool combatResult = false)
+		if (!combatResult)
 		{
+			cout << string(50, '\n');
 			cout << "Game Over!!! Try Again Next Time :(" << endl;
+			cin.get();
+			cin.get();
 			return 0;
 		}
 		cin.get();

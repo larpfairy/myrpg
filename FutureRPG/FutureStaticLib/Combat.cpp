@@ -171,15 +171,15 @@ namespace AllCombat
 	{
 		if (enemyName == "Raider")
 		{
-			return 1;
+			return 100;
 		}
 		else if (enemyName == "Raider Commander")
 		{
-			return 2;
+			return 200;
 		}
 		else if (enemyName == "Space Rat")
 		{
-			return 1;
+			return 100;
 		}
 	}
 	int Combat::GetEnemyArmor(string enemyName)

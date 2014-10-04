@@ -5,8 +5,13 @@ using namespace std;
 
 void Player::setname()
 {
-	cout << "Please enter your name: ";
-	cin >> name;
+	int i = 0;
+	while (i == 0)
+	{
+		cout << "Please enter your name: ";
+		cin >> name;
+		i++;
+	}
 }
 string Player::getname()
 {
@@ -21,9 +26,11 @@ void Player::setclass()
 		cout << i + 1 << ". ";
 		cout << Classes[i] << endl;
 	}
+	int classnumber;
 	cin >> classnumber;
 	playerclass = Classes[classnumber - 1];
 }
+
 string Player::getclass()
 {
 	return playerclass;
